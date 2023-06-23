@@ -6,5 +6,6 @@ account_id = "a5a92e57f7c6a51093123be9dc525d2a"
 command = "npm run build"
 main = "./.next/server/pages/index.js"
 
-
-
+[site]
+bucket = "./public"
+entry-point = "./.next/server/pages/index.js"
