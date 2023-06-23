@@ -1,0 +1,14 @@
+name = "hello-world-broken-forest-d7bd"
+type = "javascript"
+account_id = "a5a92e57f7c6a51093123be9dc525d2a"
+
+[build]
+command = "npm run build"
+main = "index.js"
+
+[site]
+bucket = "./public"
+entry-point = "index.html"
+
+[vars]
+VAR_NAME = "value"
