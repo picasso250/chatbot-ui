@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy to Cloudflare Workers/Pages
 
 on:
   push:
@@ -6,12 +6,23 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    name: Deploy
+
     steps:
-      - uses: actions/checkout@v2
-      - name: Publish
-        uses: cloudflare/wrangler-action@2.0.0
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build and deploy with Wrangler
+        uses: cloudflare/wrangler-action@2.4.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
+          workingDirectory: .
