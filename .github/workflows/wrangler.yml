@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build and deploy with Wrangler
-        uses: cloudflare/wrangler-action@2.4.0
+        uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           workingDirectory: .
