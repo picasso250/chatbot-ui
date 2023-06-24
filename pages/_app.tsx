@@ -7,6 +7,8 @@ import { Inter } from 'next/font/google';
 
 import '@/styles/globals.css';
 
+export const runtime = 'edge';
+
 const inter = Inter({ subsets: ['latin'] });
 
 function App({ Component, pageProps }: AppProps<{}>) {
