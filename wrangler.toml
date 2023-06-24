@@ -2,6 +2,7 @@ name = "hello-world-broken-forest-d7bd"
 type = "javascript"
 account_id = "a5a92e57f7c6a51093123be9dc525d2a"
 compatibility_date = "2023-06-23"
+node_compat = true
 
 [build]
 command = "npm run build"
