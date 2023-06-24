@@ -10,7 +10,7 @@ import { Readability } from '@mozilla/readability';
 import endent from 'endent';
 import jsdom, { JSDOM } from 'jsdom';
 
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
 
 const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
   try {

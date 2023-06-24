@@ -41,7 +41,7 @@ import { HomeInitialState, initialState } from './home.state';
 
 import { v4 as uuidv4 } from 'uuid';
 
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
 
 interface Props {
   serverSideApiKeyIsSet: boolean;

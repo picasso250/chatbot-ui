@@ -5,7 +5,7 @@ import { OpenAIModel, OpenAIModelID } from '@/types/openai';
 import { PluginKey } from '@/types/plugin';
 import { Prompt } from '@/types/prompt';
 
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
 
 export interface HomeInitialState {
   apiKey: string;

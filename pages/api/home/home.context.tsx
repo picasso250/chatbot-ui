@@ -8,7 +8,7 @@ import { FolderType } from '@/types/folder';
 
 import { HomeInitialState } from './home.state';
 
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
 
 export interface HomeContextProps {
   state: HomeInitialState;
